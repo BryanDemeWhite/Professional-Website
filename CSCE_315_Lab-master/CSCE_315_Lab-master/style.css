@@ -1,0 +1,234 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body {
+	
+	
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	
+}
+body
+{
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	
+}
+#nav-bar
+{
+
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	
+}
+.navbar
+{
+	background-image: linear-gradient(to right, #500000,#580000); /* gradient if i want it */
+	padding: 0 !important;
+}
+.navbar-brand
+{
+	color: #fff !important;
+	height: 40px;
+	padding-left: 20px;
+	/*font-family: sans-serif;*/
+}
+
+.navbar-nav li
+{
+
+	padding: 0 10px;
+}
+.navbar-nav li a
+{
+	color: #fff !important;
+	font-weight: 600;
+	float: right;
+	text-align: left;
+}
+.navbar-nav li a:hover
+{
+	color: #808080 !important;
+
+}
+.navbar-toggler
+{
+	outline: none !important;
+	color: white ;
+
+}
+.navbar-toggler
+{
+	outline: none !important;
+}
+#hero{
+	position: relative;
+}
+#hero video{
+	height:100vh;
+	width: 100%;
+	background-position: absolute;
+	z-index:10;
+	object-fit: cover;
+}
+
+.caption{
+	position: absolute;
+	top: 38%;
+	width: 100%;
+	color: white;
+	
+}
+.caption2{
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	color: white;
+}
+.indexCaption{
+	position: absolute;
+	top: 80%;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	background-color: none; 
+}
+
+.indexCaption2{
+	position: absolute;
+	top: 75%;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	background-color: none; 
+}
+.buttonOnTop{
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	color: white;
+}
+.button1
+{
+	color: white;
+background-color: #500000; 
+
+}
+.caption3{
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	color: black;
+}
+.profilepic {
+ 
+   position: absolute;
+    top: 90%;
+    width: 100%;
+    
+}
+
+#social-media
+
+{
+	background-image: linear-gradient(to right, #500000,#580000);
+	padding: 10px 0;
+}
+
+#social-media p
+
+{
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	color: white;
+
+}
+.social-icons img
+{
+	width: 60px;
+	transition: 0.5s;
+
+}
+.social-icons a:hover img
+{
+	transform: translateY(-10px);
+	
+}
+
+
+#footer
+{
+	background-image: linear-gradient(to right, #500000,#580000);
+	color: #fff;
+}
+
+.footer-box
+{
+	padding: 20px;
+}
+
+.footer-box .fa
+{
+	margin-right: 8px;
+	font-size:25px;
+	height:40px;
+	width:40px;
+	text-align: center;
+	padding-top: 7px;
+	border-radius: 2px;
+	background-image: linear-gradient(to right, #500000,#580000);
+
+}
+
+#PortfolioText
+{
+	background-image: white;
+	color: black;
+}
+
+.PortfolioText-box
+{
+	padding: 50px;
+}
+
+.PortfolioText-box p
+{
+	margin-right: 88px;
+	
+	
+	width:500px;
+	text-align: left;
+	
+	
+
+}
+
+#QualText
+{
+	background-image: white;
+	color: black;
+}
+
+.QualText-box
+{
+	padding: 100px;
+}
+
+.QualText-box p
+{
+	margin-right: 88px;
+	
+	
+	width:500px;
+	text-align: left;
+
+}
+
+
+

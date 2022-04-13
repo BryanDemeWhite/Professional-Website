@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bryan White's Personal Texas A&M Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css" >
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+
+
+  <body onload ="Loaded()">
+  	<section id="nav-bar">
+  		<!-- NAV BAR CODE FROM https://getbootstrap.com/docs/4.1/components/navbar/--> 
+
+
+  		<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">Bryan White</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">     <!-- <ul class="navbar-nav mr-auto">
+    --> 
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Portfolio.html">Portfolio</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="Qualifications.html">Qualifications</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="Service.html">Service</a>
+      </li>
+      <!--
+     <li class="nav-item dropdown"> 
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div> 
+    -->
+
+ 
+    </ul>
+ 
+  </div>
+</nav>
+
+  	</section>
+
+
+
+
+<div id="hero">
+
+ 
+   
+      <video autoplay loop muted playsinline poster="">
+        <source src="images/fall.mp4" type="video/mp4">
+
+        </video>
+      
+
+  </div>
+
+
+  <div class="content">
+
+    <div class="container">
+
+    </div>
+  </div>
+<div id="indextext1">
+<div id="howdy" class="caption text-center">
+  <h1>Howdy</h1>
+  <!--<a class="btn btn-outline-light btn-lg" href="#course"> </a>-->
+  <div class="profilepic">
+
+        
+
+        <img class="rounded-circle z-depth-2" alt="100x100" src="images/Me.png"
+          data-holder-rendered="true">
+
+      </div>
+</div>
+
+<div id="testdarkmode" class="buttonOnTop ">
+		  <button id="button1test" class="button1" onclick = "TextAndBackGround()" > 
+            Dark Mode
+        </button>
+
+	</div>
+
+<div class="indexCaption text-center">
+
+  <h5>I am currently a junior pursuing a <a href="https://engineering.tamu.edu/cse/index.html">B.S. in Computer Science</a> and a minor in <a href="https://engineering.tamu.edu/cse/academics/degrees/undergraduate/game-design-and-dev-minor.html">Game Design</a> at <a href="https://www.tamu.edu/">Texas A&M University.</a> </h5>
+   
+       </div>   
+
+       <div class="indexCaption2 text-center">
+
+  <h5>My name is Bryan White</h5>
+   
+       </div>   
+</div>
+    
+        <script>
+
+            var str = "Toggle Light/Dark mode";
+             const exampleStyle = document.getElementById("testdarkmode").style
+   const button1 = document.getElementById("button1test").style
+
+          
+          
+          
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+              
+          
+            let flag = true
+            function toggleColor() {
+              
+              flag ? exampleStyle.color = "red" : exampleStyle.color = "blue"
+              flag = !flag
+
+
+
+ 
+
+
+
+                  if (flag == true)
+                {
+                  changeColor('white');
+                  localStorage.setItem('toggled','false');
+                  exampleStyle.color = "white"
+                  button1.color = "white"
+
+
+                }
+                else
+                {
+                  changeColor('black');
+                  localStorage.setItem('toggled','true');
+                  exampleStyle.color = "black"
+                  button1.color = "black"
+
+                }
+                                         
+              }        
+function TextAndBackGround()
+{
+  toggleColor();
+  //gfg_Run();
+}
+function Loaded()
+{
+ 
+
+                    if (localStorage.getItem('toggled') == 'true')
+                {
+                  changeColor('black');
+                  exampleStyle.color = "black"
+                  button1.color = "black"
+                  
+
+                }
+                else
+                {
+                  changeColor('white');
+                  exampleStyle.color = "white"
+                  button1.color = "white"
+                 
+                  
+
+                }
+
+}
+        </script> 
+</div>
+
+<section id="social-media">
+	<div class="container text-center">
+		<p> FIND ME ON SOCIAL MEDIA </p>
+		<div class="social-icons">
+			<a href="https://www.facebook.com/bryan.white.33234/about"><image src="images/facebook-icon.png"></a>
+			<a href="https://www.instagram.com/demetryus530/"><image src="images/instagram-icon.png"></a>
+			<a href="https://twitter.com/BryanDemeWhite"><image src="images/twitter-icon.png"></a>
+			<!--<a href="#"><image src="images/whatsapp-icon.png"></a> -->
+			<a href="https://www.linkedin.com/in/bryan-white-34a0611aa/"><image src="images/linkedin-icon.png"></a>
+			<!--<a href="#"><image src="images/snapchat-icon.png"></a>-->
+		</div>
+	</div>
+	
+</section>
+
+
+<section id="footer">
+	<img scr="image/wave2.png" class="footer-img">
+	<div class=container>
+		<div class="row">
+		<div class="col-md-4">
+		<img src="">
+		<p></p>
+				
+		</div>
+		<div class="col-md-4 footer-box">
+		<p><b>CONTACT ME</b></p>
+		<p><i class="fa fa-location-arrow"></i>Texas A&M College Station, TX</p>
+		<p><i class="fa fa-phone"></i>7325863579</p>
+		<p><i class="fa fa-envelope"></i>Bryan.Deme.White@gmail.com</p>
+
+				
+		</div>
+			
+
+		</div>
+
+		
+	</div>
+
+
+
+	<div class="caption5 text-center">
+	<p><i class="fa fa-copyright"></i> Bryan White</p>
+    </div>
+		
+	
+</section>
+
+
+
+ <!--<p class="carousel-caption text-center">This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> -->
+   
+  </body>
+</html>
